@@ -1,0 +1,83 @@
+.home {
+  width: 100vw;
+  position: relative;
+  // Sale Section1 and 2 with crousel
+  .InnerHome {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282929;
+    &.darkLight {
+      background-color: #f69324;
+    }
+    > .section1,
+    .section2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+      background-image: url("../../../assets/background1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 10px;
+      box-shadow: #0000003d 0px 3px 8px;
+      &.darkLight {
+        background-image: url("../../../assets/background2.png");
+      }
+    }
+
+    > .section1 {
+      border-radius: 0 50px 50px 0;
+    }
+    > .section2 {
+      border-radius: 50px 0 0 50px;
+    }
+  }
+
+  // Special Offers Section
+  .saleDiv {
+    width: 100%;
+    background-color: #282929;
+    color: #fefefe;
+    text-align: center;
+    &.darkLight {
+      background-color: #f69324;
+      color: #282929;
+    }
+  }
+}
+@media (width <= 769px) {
+  .home {
+    .InnerHome {
+      flex-direction: column;
+      > .section1,
+      .section2 {
+        width: 100%;
+        padding: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      > .section1 {
+        border-radius: 0 0 50px 50px;
+      }
+      > .section2 {
+        border-radius: 50px 50px 0 0;
+      }
+    }
+  }
+}
+
+@media (width <= 426px) {
+  .home {
+    .InnerHome {
+      > .section1 {
+        display: none;
+      }
+    }
+  }
+}

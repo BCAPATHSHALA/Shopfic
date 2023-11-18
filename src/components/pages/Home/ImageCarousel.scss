@@ -1,0 +1,36 @@
+.image-carousel {
+  width: 50%;
+
+  .slick-dots {
+    bottom: 20px;
+
+    li {
+      button {
+        font-size: 10px;
+        &:before {
+          color: #000000;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &:before {
+            color: #f69324; // Change the color of the active indicator
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+@media (width <= 769px) {
+  .image-carousel {
+    width: 100%;
+    margin-bottom: -10px;
+  }
+}

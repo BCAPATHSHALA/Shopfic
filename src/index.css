@@ -1,0 +1,53 @@
+/* DM Sarif Display fonts for heading
+Regular 400 48px
+*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+/* Nunito fonts for texting
+Regular 400 16px
+*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+:root {
+  --primary-color: #f1323e;
+  --secondary-color: #282929;
+  --classic-color: #fefffe;
+}
+
+#root {
+  max-width: 1280px;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #f8b124; */
+  /* background-color: #f69324; */
+  background-color: #fefffe;
+}
+
+/* Navbar Ligt and Dark Start */
+.darkLightForNavbar {
+  background: var(--secondary-color);
+}
+
+.darkLightForNabvarLiHoverBackground > li:hover {
+  background-color: var(--primary-color);
+  color: var(--classic-color);
+}
+/* Navbar Ligt and Dark End */

@@ -1,0 +1,41 @@
+.simpleNavbar {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #282929;
+  gap: 10px;
+  padding: 20px;
+  > div {
+    color: #fefffe;
+    border-radius: 5px;
+    align-self: center;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #f1323e;
+    }
+    &.open:hover {
+      background-color: #282929;
+    }
+  }
+  > span {
+    color: #f1323e;
+    display: inline-block;
+    align-self: center;
+    font-size: 1em;
+    &.open {
+      color: #282929;
+    }
+  }
+
+  &.open {
+    background-color: #f69324;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .simpleNavbar {
+    justify-content: center;
+  }
+}
