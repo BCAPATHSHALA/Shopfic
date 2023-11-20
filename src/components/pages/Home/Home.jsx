@@ -7,7 +7,7 @@ import "./home.scss";
 
 const Home = ({ darkLight }) => {
   return (
-    <div className="home">
+    <div className={`home ${darkLight ? "darkLight" : ""}`}>
       <Simplenabvar darkLight={darkLight} />
       {/* Sale Section1 and 2 with crousel */}
       <div className={`InnerHome ${darkLight ? "darkLight" : ""}`}>
@@ -26,7 +26,7 @@ const Home = ({ darkLight }) => {
         </h1>
       </div>
       {/* Browse million products for your needs */}
-      <BrowseProducts />
+      <BrowseProducts darkLight={darkLight} />
     </div>
   );
 };
