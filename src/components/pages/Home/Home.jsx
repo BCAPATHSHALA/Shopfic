@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import Simplenabvar from "../../layouts/simple nabvar/Simplevabvar";
-import SaleProductCard from "../Product/SaleProductCard";
+import { SaleProductCard1, SaleProductCard2 } from "../Product/SaleProductCard";
 import ImageCarousel from "./ImageCarousel";
 import "./home.scss";
 
@@ -11,11 +11,11 @@ const Home = ({ darkLight }) => {
       {/* Sale Section1 and 2 with crousel */}
       <div className={`InnerHome ${darkLight ? "darkLight" : ""}`}>
         <div className={`section1 ${darkLight ? "darkLight" : ""}`}>
-          <SaleProductCard darkLight={darkLight} />
+          <SaleProductCard1 darkLight={darkLight} />
         </div>
         <ImageCarousel />
         <div className={`section2 ${darkLight ? "darkLight" : ""}`}>
-          <SaleProductCard darkLight={darkLight} />
+          <SaleProductCard2 darkLight={darkLight} />
         </div>
       </div>
       {/* Special Offers Section */}
