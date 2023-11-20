@@ -78,6 +78,10 @@ li:hover {
   background: #282929;
 }
 
+.menuBar li > a {
+  color: #fefffe;
+}
+
 .extraBTN {
   width: 100%;
   display: flex;
@@ -88,11 +92,15 @@ li:hover {
 }
 .extraBTN > li {
   width: 200px;
-  color: #fefffe;
   padding: 10px;
   border-radius: 10px;
+  transition: all 0.5s;
+  > a {
+    color: #fefffe;
+    transition: all 0.5s;
+  }
 }
-.extraBTN > li:hover {
+.extraBTN > li:hover a {
   color: #fefffe;
 }
 
@@ -107,11 +115,14 @@ li:hover {
   margin: 5px;
   border-radius: 5px;
   background: #fefffe;
-  color: #f1323e;
   transition: all 0.5s;
+  > a {
+    color: #f1323e;
+    transition: all 0.5s;
+  }
 }
 
-.LSLPD > li:hover {
+.LSLPD > li:hover a {
   color: #282929;
 }
 

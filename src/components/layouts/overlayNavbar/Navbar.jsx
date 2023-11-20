@@ -7,8 +7,9 @@ import { BsSearch } from "react-icons/bs";
 import { GiMoon } from "react-icons/gi";
 import { WiMoonAltWaxingCrescent5 } from "react-icons/wi";
 import logo from "../../../assets/shopfic logo.png";
+import { Link } from "react-router-dom";
 
-const Navbar = ({isOpen, toggleNavbar, darkLight, darkLightFun}) => {
+const Navbar = ({ isOpen, toggleNavbar, darkLight, darkLightFun }) => {
   // User Object
   const user1 = {
     role: "admin",
@@ -56,11 +57,19 @@ const Navbar = ({isOpen, toggleNavbar, darkLight, darkLightFun}) => {
       </div>
 
       {/* Menubar BTNs */}
-      <ul>
-        <li onClick={toggleNavbar}>Home</li>
-        <li onClick={toggleNavbar}>Products</li>
-        <li onClick={toggleNavbar}>Contact</li>
-        <li onClick={toggleNavbar}>About</li>
+      <ul className="menuBar">
+        <li onClick={toggleNavbar}>
+          <Link to="/">Home</Link>
+        </li>
+        <li onClick={toggleNavbar}>
+          <Link to="/products">Products</Link>
+        </li>
+        <li onClick={toggleNavbar}>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li onClick={toggleNavbar}>
+          <Link to="/about">About</Link>
+        </li>
       </ul>
 
       {/* Cart and Search BTNs */}
@@ -70,10 +79,14 @@ const Navbar = ({isOpen, toggleNavbar, darkLight, darkLightFun}) => {
         }`}
       >
         <li onClick={toggleNavbar}>
-          <FaShoppingBag /> <span>CART</span>
+          <Link to="/cart">
+            <FaShoppingBag /> <span>CART</span>
+          </Link>
         </li>
         <li onClick={toggleNavbar}>
-          <BsSearch /> <span>SEARCH</span>
+          <Link to="/search">
+            <BsSearch /> <span>SEARCH</span>
+          </Link>
         </li>
       </ul>
 
@@ -87,21 +100,35 @@ const Navbar = ({isOpen, toggleNavbar, darkLight, darkLightFun}) => {
           <>
             {user1.role === "user" ? (
               <>
-                <li onClick={toggleNavbar}>Logout</li>
-                <li onClick={toggleNavbar}>Profile</li>
+                <li onClick={toggleNavbar}>
+                  <Link to="/logout">Logout</Link>
+                </li>
+                <li onClick={toggleNavbar}>
+                  <Link to="/profile">Profile</Link>
+                </li>
               </>
             ) : (
               <>
-                <li onClick={toggleNavbar}>Logout</li>
-                <li onClick={toggleNavbar}>Profile</li>
-                <li onClick={toggleNavbar}>Dashboard</li>
+                <li onClick={toggleNavbar}>
+                  <Link to="/logout">Logout</Link>
+                </li>
+                <li onClick={toggleNavbar}>
+                  <Link to="/profile">Profile</Link>
+                </li>
+                <li onClick={toggleNavbar}>
+                  <Link to="/dashboard">Dashboard</Link>
+                </li>
               </>
             )}
           </>
         ) : (
           <>
-            <li onClick={toggleNavbar}>Login</li>
-            <li onClick={toggleNavbar}>Signup</li>
+            <li onClick={toggleNavbar}>
+              <Link to="/login">Login</Link>
+            </li>
+            <li onClick={toggleNavbar}>
+              <Link to="/signup">Signup</Link>
+            </li>
           </>
         )}
       </ul>

@@ -17,22 +17,23 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Header darkLight={darkLight} />
-      <Navbar
-        isOpen={isNavbarOpen}
-        toggleNavbar={toggleNavbar}
-        darkLightFun={darkLightFun}
-        darkLight={darkLight}
-      />
-      <Router>
+    <Router>
+      <div className="App">
+        <Header darkLight={darkLight} />
+        <Navbar
+          isOpen={isNavbarOpen}
+          toggleNavbar={toggleNavbar}
+          darkLightFun={darkLightFun}
+          darkLight={darkLight}
+        />
+
         <Routes>
-          <Route path="/" element={<Home darkLight={darkLight}/>} />
+          <Route path="/" element={<Home darkLight={darkLight} />} />
           {/* <Route path="/todoapp" element={<Todoapp />} /> */}
           {/* <Route path="/*" element={<NotFoundPage />} /> */}
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 

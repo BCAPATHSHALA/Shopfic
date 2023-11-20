@@ -29,10 +29,9 @@ The project relies on the following key dependencies:
 
 - **react** and **react-dom**: The core libraries for building user interfaces with React.
 - **react-icons**: A library for including popular icons in React projects.
-- **react-responsive-carousel**: Provides a responsive image carousel component for React.
 - **react-router-dom**: Enables routing in React applications.
 - **react-slick**: Integrates the Slick carousel component with React.
-- **sass**: The preprocessor for styling the application.
+- **sass**: The preprocessor for styling the application.npm
 - **slick-carousel**: A responsive carousel jQuery plugin that enhances the functionality of React Slick.
 
 Make sure to install these dependencies using `npm install` before running the project.
