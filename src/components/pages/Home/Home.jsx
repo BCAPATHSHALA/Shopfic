@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Simplenabvar from "../../layouts/simple nabvar/Simplevabvar";
 import { SaleProductCard1, SaleProductCard2 } from "../Product/SaleProductCard";
+import BrowseProducts from "./BrowseProducts";
 import ImageCarousel from "./ImageCarousel";
 import "./home.scss";
 
@@ -24,6 +25,8 @@ const Home = ({ darkLight }) => {
           Shopfic <span>Sale</span>
         </h1>
       </div>
+      {/* Browse million products for your needs */}
+      <BrowseProducts />
     </div>
   );
 };

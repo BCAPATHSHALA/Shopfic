@@ -1,6 +1,11 @@
 .home {
   width: 100vw;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #282929;
   // Sale Section1 and 2 with crousel
   .InnerHome {
     width: 100%;
@@ -10,6 +15,7 @@
     justify-content: center;
     align-items: center;
     background-color: #282929;
+    gap: 2px;
     &.darkLight {
       background-color: #f69324;
     }
@@ -45,6 +51,8 @@
     background-color: #282929;
     color: #fefefe;
     text-align: center;
+    padding: 5px;
+    border-radius: 0 0 20px 20px;
     &.darkLight {
       background-color: #f69324;
       color: #282929;
