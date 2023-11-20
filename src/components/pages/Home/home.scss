@@ -75,6 +75,8 @@
 @media (width <= 426px) {
   .home {
     .InnerHome {
+      gap: 20px;
+      padding: 5px;
       > .section1 {
         display: none;
       }
