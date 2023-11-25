@@ -3,6 +3,7 @@ import Navbar from "./components/layouts/overlayNavbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/layouts/header/Header";
 import Home from "./components/pages/Home/Home";
+import Footer from "./components/layouts/footer/Footer";
 
 function App() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -32,6 +33,7 @@ function App() {
           {/* <Route path="/todoapp" element={<Todoapp />} /> */}
           {/* <Route path="/*" element={<NotFoundPage />} /> */}
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );
