@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/layouts/header/Header";
 import Home from "./components/pages/Home/Home";
 import Footer from "./components/layouts/footer/Footer";
+import NotFoundPage from "./components/pages/Notfound/Notfound";
 
 function App() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -31,9 +32,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home darkLight={darkLight} />} />
           {/* <Route path="/todoapp" element={<Todoapp />} /> */}
-          {/* <Route path="/*" element={<NotFoundPage />} /> */}
+          <Route path="/*" element={<NotFoundPage />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );

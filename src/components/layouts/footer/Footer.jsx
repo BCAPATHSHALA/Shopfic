@@ -48,6 +48,7 @@ const Footer = () => {
           <Link to={"/supports"}>Supports</Link>
           <Link to={"/termscondition"}>Terms & Condition</Link>
           <Link to={"/privacypolicy"}>Privacy Policy</Link>
+          <Link to={"/sitemap"}>Sitemap</Link>
         </div>
         <div className="subscribe">
           <h3>Subscribe More Info</h3>

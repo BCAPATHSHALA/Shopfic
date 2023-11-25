@@ -1,0 +1,41 @@
+.notefound {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #282929;
+  box-shadow: #00000029 0px 1px 4px, #333333 0px 0px 0px 3px;
+  gap: 10px;
+  > .imgDiv {
+    width: 300px;
+    height: auto;
+    position: relative;
+    > img {
+      width: inherit;
+      height: inherit;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  > button {
+    width: 150px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    > a {
+      color: #282929;
+      transition: all 0.5s ease-in-out;
+    }
+    &:hover a {
+      color: #f1323e;
+    }
+  }
+}
