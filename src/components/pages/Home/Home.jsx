@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import Simplenabvar from "../../layouts/simple nabvar/Simplevabvar";
+import MetaData from "../../utility/MetaData";
 import { SaleProductCard1, SaleProductCard2 } from "../Product/SaleProductCard";
 import BrowseProducts from "./BrowseProducts";
 import ImageCarousel from "./ImageCarousel";
@@ -8,6 +9,7 @@ import "./home.scss";
 const Home = ({ darkLight }) => {
   return (
     <div className={`home ${darkLight ? "darkLight" : ""}`}>
+      <MetaData title={"Shopfic"} />
       <Simplenabvar darkLight={darkLight} />
       {/* Sale Section1 and 2 with crousel */}
       <div className={`InnerHome ${darkLight ? "darkLight" : ""}`}>
